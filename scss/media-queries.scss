@@ -1,56 +1,53 @@
 @media(max-width:700px) {
-  .container {
-    margin-top: 2rem;
+  .first-row {
+    padding: 1.6rem;
 
-    .first-row {
-      padding: 1.6rem;
-
-      .subtitle {
-        width: 17rem;
-      }
-
-      .text-join {
-        width: 20rem;
-      }
+    .subtitle {
+      width: 17rem;
     }
 
-    .second-row {
-      flex-direction: column;
-
-      .subtitle-section {
-        margin: 1.6rem 0 0 1.6rem;
-      }
-
-      .monthly-subs {
-        border-radius: 0;
-        padding: 0;
-
-        .cost,
-        .text-monthly {
-          margin-left: 1.6rem;
-        }
-
-        .btn {
-          margin: 1.6rem;
-          width: 87.5%;
-        }
-      }
-
-      .why-us {
-        border-radius: 0 0 0.5rem 0.5rem;
-        padding: 0;
-
-        .text-whyus {
-          margin: 1.6rem;
-        }
-      }
+    .text-join {
+      width: 20rem;
     }
   }
 
-  footer {
-    font-size: 0.65rem;
+  .second-row {
+    flex-direction: column;
+
+    .subtitle-section {
+      margin: 1.6rem 0 0 1.6rem;
+    }
+
+    .monthly-subs {
+      border-radius: 0;
+      padding: 0;
+
+      .cost,
+      .text-monthly {
+        margin-left: 1.6rem;
+      }
+
+      .btn {
+        margin: 1.6rem;
+        width: 87.5%;
+      }
+    }
+
+    .why-us {
+      border-radius: 0 0 0.5rem 0.5rem;
+      padding: 0;
+
+      .text-whyus {
+        margin: 1.6rem;
+      }
+    }
   }
 }
+
+footer {
+  font-size: 0.65rem;
+}
+
 
 @media(max-width:500px) {
   .first-row {

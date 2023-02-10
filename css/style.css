@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+  margin-top: 2rem;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -127,47 +128,45 @@ footer .attribution a:hover {
 }
 
 @media (max-width: 700px) {
-  .container {
-    margin-top: 2rem;
-  }
-  .container .first-row {
+  .first-row {
     padding: 1.6rem;
   }
-  .container .first-row .subtitle {
+  .first-row .subtitle {
     width: 17rem;
   }
-  .container .first-row .text-join {
+  .first-row .text-join {
     width: 20rem;
   }
-  .container .second-row {
+  .second-row {
     flex-direction: column;
   }
-  .container .second-row .subtitle-section {
+  .second-row .subtitle-section {
     margin: 1.6rem 0 0 1.6rem;
   }
-  .container .second-row .monthly-subs {
+  .second-row .monthly-subs {
     border-radius: 0;
     padding: 0;
   }
-  .container .second-row .monthly-subs .cost,
-  .container .second-row .monthly-subs .text-monthly {
+  .second-row .monthly-subs .cost,
+  .second-row .monthly-subs .text-monthly {
     margin-left: 1.6rem;
   }
-  .container .second-row .monthly-subs .btn {
+  .second-row .monthly-subs .btn {
     margin: 1.6rem;
     width: 87.5%;
   }
-  .container .second-row .why-us {
+  .second-row .why-us {
     border-radius: 0 0 0.5rem 0.5rem;
     padding: 0;
   }
-  .container .second-row .why-us .text-whyus {
+  .second-row .why-us .text-whyus {
     margin: 1.6rem;
   }
-  footer {
-    font-size: 0.65rem;
-  }
 }
+footer {
+  font-size: 0.65rem;
+}
+
 @media (max-width: 500px) {
   .first-row {
     padding: 1.4rem;
