@@ -1,0 +1,153 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;700&display=swap');
+
+$main-font: 'Karla', sans-serif;
+
+$cyan: hsl(179, 62%, 43%);
+$bright-yellow: hsl(71, 73%, 54%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $light-gray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $main-font;
+}
+
+.container {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 1rem hsla(216, 22%, 67%, 0.555);
+}
+
+.first-row {
+  background-color: $white;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2.5rem;
+
+  .title {
+    color: $cyan;
+    font-size: 1.46rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: $bright-yellow;
+    margin-top: 1.54rem;
+  }
+
+  .text-join {
+    color: $grayish-blue;
+    font-size: 0.975rem;
+    line-height: 1.6rem;
+    margin-top: 0.8rem;
+    width: 34.6rem;
+  }
+}
+
+.second-row {
+  display: flex;
+  color: $white;
+  width: 100%;
+
+  .subtitle-section {
+    font-size: 1.1rem;
+  }
+
+  .monthly-subs {
+    background-color: $cyan;
+    width: 100%;
+    border-bottom-left-radius: 0.5rem;
+    padding: 2.5rem;
+
+    .cost {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 1.2rem;
+      margin-bottom: 0.4rem;
+
+      .price {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $white;
+      }
+
+      .period {
+        filter: opacity(0.6);
+        margin-left: 0.8rem;
+      }
+    }
+
+    .text-monthly {
+      font-size: 0.97rem;
+    }
+
+    .btn {
+      background-color: $bright-yellow;
+      border: 2px solid transparent;
+      border-radius: 0.3rem;
+      font-family: $main-font;
+      font-weight: 700;
+      color: $white;
+      margin-top: 2rem;
+      padding: 0.9rem;
+      width: 100%;
+      box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.181);
+
+      &:hover {
+        background-color: transparent;
+        border: 2px solid $white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .why-us {
+    background-color: $cyan;
+    filter: opacity(0.8);
+    width: 100%;
+    border-bottom-right-radius: 0.5rem;
+    padding: 2.5rem;
+
+    .text-whyus {
+      font-size: 0.85rem;
+      line-height: 1.3rem;
+      margin-top: 1.3rem;
+      width: 12rem;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  width: 100%;
+  font-size: 0.69rem;
+  color: $cyan;
+
+  .attribution a {
+    color: $cyan;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@import "./media-queries.scss"

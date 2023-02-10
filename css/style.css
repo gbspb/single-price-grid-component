@@ -1,0 +1,208 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204deg, 43%, 93%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 1rem hsla(216deg, 22%, 67%, 0.555);
+}
+
+.first-row {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 2.5rem;
+}
+.first-row .title {
+  color: hsl(179deg, 62%, 43%);
+  font-size: 1.46rem;
+}
+.first-row .subtitle {
+  font-size: 1.1rem;
+  color: hsl(71deg, 73%, 54%);
+  margin-top: 1.54rem;
+}
+.first-row .text-join {
+  color: hsl(218deg, 22%, 67%);
+  font-size: 0.975rem;
+  line-height: 1.6rem;
+  margin-top: 0.8rem;
+  width: 34.6rem;
+}
+
+.second-row {
+  display: flex;
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+}
+.second-row .subtitle-section {
+  font-size: 1.1rem;
+}
+.second-row .monthly-subs {
+  background-color: hsl(179deg, 62%, 43%);
+  width: 100%;
+  border-bottom-left-radius: 0.5rem;
+  padding: 2.5rem;
+}
+.second-row .monthly-subs .cost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.second-row .monthly-subs .cost .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.second-row .monthly-subs .cost .period {
+  filter: opacity(0.6);
+  margin-left: 0.8rem;
+}
+.second-row .monthly-subs .text-monthly {
+  font-size: 0.97rem;
+}
+.second-row .monthly-subs .btn {
+  background-color: hsl(71deg, 73%, 54%);
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 2rem;
+  padding: 0.9rem;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem hsla(0deg, 0%, 0%, 0.181);
+}
+.second-row .monthly-subs .btn:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.second-row .why-us {
+  background-color: hsl(179deg, 62%, 43%);
+  filter: opacity(0.8);
+  width: 100%;
+  border-bottom-right-radius: 0.5rem;
+  padding: 2.5rem;
+}
+.second-row .why-us .text-whyus {
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  margin-top: 1.3rem;
+  width: 12rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  width: 100%;
+  font-size: 0.69rem;
+  color: hsl(179deg, 62%, 43%);
+}
+footer .attribution a {
+  color: hsl(179deg, 62%, 43%);
+  text-decoration: none;
+}
+footer .attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .container .first-row {
+    padding: 1.6rem;
+  }
+  .container .first-row .subtitle {
+    width: 17rem;
+  }
+  .container .first-row .text-join {
+    width: 20rem;
+  }
+  .container .second-row {
+    flex-direction: column;
+  }
+  .container .second-row .subtitle-section {
+    margin: 1.6rem 0 0 1.6rem;
+  }
+  .container .second-row .monthly-subs {
+    border-radius: 0;
+    padding: 0;
+  }
+  .container .second-row .monthly-subs .cost,
+  .container .second-row .monthly-subs .text-monthly {
+    margin-left: 1.6rem;
+  }
+  .container .second-row .monthly-subs .btn {
+    margin: 1.6rem;
+    width: 87.5%;
+  }
+  .container .second-row .why-us {
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 0;
+  }
+  .container .second-row .why-us .text-whyus {
+    margin: 1.6rem;
+  }
+  footer {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 500px) {
+  .first-row {
+    padding: 1.4rem;
+  }
+  .first-row .title {
+    font-size: 1.2rem;
+  }
+  .first-row .subtitle {
+    font-size: 0.9rem;
+    width: 15rem;
+    margin-top: 1.54rem;
+  }
+  .first-row .text-join {
+    width: 16rem;
+    font-size: 0.8rem;
+    line-height: 1.54rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  .second-row .subtitle-section {
+    margin: 1.4rem 0 0 1.4rem;
+  }
+  .second-row .monthly-subs .cost,
+  .second-row .monthly-subs .text-monthly {
+    margin-left: 1.4rem;
+  }
+  .second-row .monthly-subs .btn {
+    margin: 1.4rem;
+    width: 85%;
+  }
+  .second-row .why-us .text-whyus {
+    margin: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 1.15rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

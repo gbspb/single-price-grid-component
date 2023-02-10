@@ -1,0 +1,104 @@
+@media(max-width:700px) {
+  .container {
+    margin-top: 2rem;
+
+    .first-row {
+      padding: 1.6rem;
+
+      .subtitle {
+        width: 17rem;
+      }
+
+      .text-join {
+        width: 20rem;
+      }
+    }
+
+    .second-row {
+      flex-direction: column;
+
+      .subtitle-section {
+        margin: 1.6rem 0 0 1.6rem;
+      }
+
+      .monthly-subs {
+        border-radius: 0;
+        padding: 0;
+
+        .cost,
+        .text-monthly {
+          margin-left: 1.6rem;
+        }
+
+        .btn {
+          margin: 1.6rem;
+          width: 87.5%;
+        }
+      }
+
+      .why-us {
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding: 0;
+
+        .text-whyus {
+          margin: 1.6rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: 0.65rem;
+  }
+}
+
+@media(max-width:500px) {
+  .first-row {
+    padding: 1.4rem;
+
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      width: 15rem;
+      margin-top: 1.54rem;
+    }
+
+    .text-join {
+      width: 16rem;
+      font-size: 0.8rem;
+      line-height: 1.54rem;
+      margin-top: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .second-row {
+    .subtitle-section {
+      margin: 1.4rem 0 0 1.4rem;
+    }
+
+    .monthly-subs {
+
+      .cost,
+      .text-monthly {
+        margin-left: 1.4rem;
+      }
+
+      .btn {
+        margin: 1.4rem;
+        width: 85%;
+      }
+    }
+
+    .why-us {
+      .text-whyus {
+        margin: 1.4rem;
+        font-size: 0.8rem;
+        line-height: 1.15rem;
+      }
+    }
+  }
+}
